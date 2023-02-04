@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<video autoplay="" muted="" loop="" id="myVideo" playsinline="">
+    <source src="1.mp4">
+</video>
+
+<div class="header">
+    <h1>Welcome to Paradise Hotel</h1>
+
+</div>
+
+<div class="container">
+    
+    <div class="provide">
+        <h4 id="amenities">Popular amenities:</h4>
+        <div class="row">
+        <div>
+        <ul>
+            <li>Pool</li>
+            <li>Free WiFi</li>
+            <li>Pet-friendly</li>
+            <li>Air conditioning</li>
+            <li>Spa</li>
+            <li>Restaurant</li>
+        </ul>
+        </div>
+        <div>
+        <ul>
+            <li>Gym</li>
+            <li>Breakfast available</li>
+            <li>Bar</li>
+            <li>Business services</li>
+            <li>Room service</li>
+            <li>Laundry</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+<div class="container-2">
+    <div class="rooms">
+        <h2>Choose your room</h2>
+        <select name="" id="room">
+            <option disabled selected>Select an option</option>
+            <option value="309">Classic Room, 1 King Bed - $309</option>
+            <option value="327">Superior Room, 2 Double Beds - $327</option>
+            <option value="363">Deluxe Room, 1 King Bed (Preferred) - $363</option>
+            <option value="390">Premier Executive Room - $390</option>
+            <option value="672">Junior Suite - $672</option>
+            <option value="1122">Executive Suite, 1 Bedroom - $1,122</option>
+        </select>
+    </div>
+
+<div class="rooms">
+    <h2>How long you planing to stay?</h2>
+    <input type="number" step="1" min="1" id="day" placeholder="📅">
+</div>
+
+<div class="rooms">
+    <h2>How many travellers going to stay?</h2>
+    <div>
+    <p>Adults <br>
+    <input type="number" step="1" min="1" max="4" id="adults" placeholder="👤"></p>
+
+    <p>Children <br>(Age 3-17)
+        <input type="number" step="1" min="0" max="4"  id="children" placeholder="👤"></p>
+    </div>
+</div>
+
+<div class="rooms">
+    <h2>Do you want to add breakfast? </h2>
+
+    <p id="bottom">* Breackfast per person - $20</p>
+    
+    
+    <select id="breakfast">
+        <option  value="0.00" > <span class="radio">No</span> </option>
+        <option  value="20.0" ><span class="radio">Yes</span> </option>
+</select>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<div class="btnCalculate">
+    <button id="calculate">Calculate</button>
+</div>
+
+<div class="container-3"> 
+<h3>Price details</h3>
+
+<div class="totalPrice">
+    
+<div class="for" >
+    <p>For room</p>
+    <span>$
+    <span id="forRoom"></span></span>
+</div>
+
+<div class="for" >
+    <p>For breakfast</p> 
+    <span>$
+    <span id="forBreakfast"></span></span>
+</div>
+
+<div class="for" >
+    <p>Total</p> 
+    <span>$
+    <span id="totalSum"></span></span>
+</div>
+</div>
+
+
+</div>
+
+<div id="footer">
+    <h3>We hope you enjoy your stay</h3>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

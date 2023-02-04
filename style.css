@@ -1,0 +1,201 @@
+body{
+    background-color: #f1b790;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+h3{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+div{
+    position: relative;
+}
+
+.provide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 25px;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+    margin: 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#amenities{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+ul{
+    list-style: circle inside;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rooms{
+    background-color: #e8c6b0b5;
+    box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.886);
+    border-radius: 7px;
+    border: 1px dotted white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    padding: 7px;
+    color: rgb(13, 45, 46);
+    margin: 10px;
+}
+
+#room, #breakfast{
+    border: none;
+    width: 70%;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: black;
+}
+#room{
+    margin-top: 60px;
+}
+#day{
+    border: none;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 60px;
+}
+#adults, #children{
+    border: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    
+    width: 100%;
+    
+}
+.radio{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    padding: 6px;
+}
+
+
+.btnCalculate{
+display: flex;
+justify-content: center;
+margin: 15px;
+}
+#calculate{
+    width: 60%;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    background-color: #e8c6b0b5;
+    box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.886);
+    border-radius: 7px;
+    border: 1px dotted white;
+    color: rgb(13, 45, 46);
+    cursor: pointer;
+}
+#calculate:hover{
+    background-color: #f1b790f3;
+}
+.container-3{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+.totalPrice{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    
+}
+.for{
+    margin: 15px;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+    background-color: #e8c6b0b5;
+    box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.886);
+    border-radius: 7px;
+    border: 1px dotted white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    width: 150px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+}
+#bottom{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+
+@media all and (max-width:800px) {
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .rooms{
+        width: 100%;
+}
+.totalPrice{
+    flex-direction: column;
+}
+#myVideo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-height: 100%;
+}
+h2{
+    font-size: 18px;
+}
+}
